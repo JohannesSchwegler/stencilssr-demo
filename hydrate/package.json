@@ -1,5 +1,5 @@
 {
-  "name": "stencilssr-hydrate",
+  "name": "stencilssr/hydrate",
   "description": "stencilssr component hydration app.",
   "main": "index.js",
   "types": "index.d.ts",
