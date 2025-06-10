@@ -10,19 +10,19 @@
 
 import type { StencilReactComponent } from '@stencil/react-output-target/runtime';
 import { createComponent, type SerializeShadowRootOptions } from '@stencil/react-output-target/ssr';
-import { MyComponent as MyComponentElement } from "stencilssr/dist/components/my-component.js";
+import { MyComponent as MyComponentElement } from 'stencilssr/my-component';
 
-export const serializeShadowRoot: SerializeShadowRootOptions = "declarative-shadow-dom";
+export const serializeShadowRoot: SerializeShadowRootOptions = 'declarative-shadow-dom';
 
 export type MyComponentEvents = NonNullable<unknown>;
 
 export const MyComponent: StencilReactComponent<MyComponentElement, MyComponentEvents> = /*@__PURE__*/ createComponent<MyComponentElement, MyComponentEvents>({
-    tagName: 'my-component',
-    properties: {
-        first: 'first',
-        middle: 'middle',
-        last: 'last'
-    },
-    hydrateModule: import('stencilssr-hydrate'),
-    serializeShadowRoot
+  tagName: 'my-component',
+  properties: {
+    first: 'first',
+    middle: 'middle',
+    last: 'last',
+  },
+  hydrateModule: import('stencilssr/hydrate'),
+  serializeShadowRoot,
 });

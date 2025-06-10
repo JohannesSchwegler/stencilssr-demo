@@ -1,7 +1,14 @@
-import type { NextConfig } from "next";
+import stencilSSR from '@stencil/ssr/next';
 
-const nextConfig: NextConfig = {
-  /* config options here */
-};
+/** @type {import('next').NextConfig} */
+const nextConfig = {};
 
-export default nextConfig;
+export default stencilSSR({
+  //@ts-ignore
+  module: import('stencilssr-react'),
+  from: 'stencilssr-react',
+  hydrateModule: import('stencilssr/hydrate'),
+  serializeShadowRoot: {
+    default: 'scoped',
+  },
+})(nextConfig);

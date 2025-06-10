@@ -21,15 +21,15 @@ export const config: Config = {
       serviceWorker: null, // disable service workers
     },
     {
-      type: 'dist-hydrate-script', 
+      type: 'dist-hydrate-script',
     },
     reactOutputTarget({
       outDir: 'frameworks/react/src/stencil-generated',
-      hydrateModule: 'stencilssr-hydrate',
-      serializeShadowRoot: 'declarative-shadow-dom'
+      serializeShadowRoot: 'declarative-shadow-dom',
+      hydrateModule: 'stencilssr/hydrate',
     }),
   ],
   testing: {
-    browserHeadless: "shell",
+    browserHeadless: 'shell',
   },
 };

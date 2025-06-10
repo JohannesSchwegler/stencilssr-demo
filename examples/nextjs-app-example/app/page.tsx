@@ -1,18 +1,11 @@
-import {
-  MyComponent
-} from './components';
+import { MyComponent } from 'stencilssr-react/server';
 import Head from 'next/head';
 
-
 const Home = () => {
- 
   return (
     <>
-      <Head>
-        <title> Page  Components</title>
-      </Head>
-      <MyComponent />
-      </>
+      <MyComponent></MyComponent>
+    </>
   );
 };
 
