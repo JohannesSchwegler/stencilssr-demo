@@ -44,15 +44,15 @@
     "generate": "stencil generate"
   },
   "devDependencies": {
-    "@stencil/core": "^4.33.1",
-    "@types/jest": "^29.5.14",
-    "@types/node": "^22.15.30",
-    "jest": "^29.7.0",
-    "jest-cli": "^29.7.0",
-    "puppeteer": "^24.10.0"
+    "@stencil/core": "^4.35.1",
+    "@types/jest": "^30.0.0",
+    "@types/node": "^24.0.4",
+    "jest": "^30.0.3",
+    "jest-cli": "^30.0.3",
+    "puppeteer": "^24.10.2"
   },
   "license": "MIT",
   "dependencies": {
-    "@stencil/react-output-target": "^1.0.4"
+    "@stencil/react-output-target": "^1.1.0"
   }
 }
